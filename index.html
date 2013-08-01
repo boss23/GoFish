@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="cardsJS">
+  <meta name="author" content="roguequery">
+  <link rel="stylesheet" href="css/styles.css"> 
+  <script src="js/kinetic-v4.5.4.min.js">
+  </script>
+</head>
+  <title>Go Fish Game!</title>
+<center>
+  <font size="7">
+  <font color="#FFFFFF">
+  <marquee bgcolor="#00000" behavior="alternate" loop="100" ><FONT FACE="algerian">Go Fish!</font>
+  <img src="types.jpg" align="left" width="50" height="50">
+  </marquee>
+  </font>
+  </font>
+</center>
+<body bgcolor="#339999">
+<br/>
+<body>
+ <center>
+  <input type="button" onclick="get_rules()" value="How to Play?" style="height: 50px; width: 100px"><br/>
+<br>
+  <input type="button" onclick="go_fish('p1')" value="manually Go Fish!" style="height: 50px; width: 125px"><br/>
+<br/>
+  <input type="button" onclick="go_fish('ai')" value=" manually Tell AI to Go Fish!" style="height: 50px; width: 200px"><br/>
+<br/>
+
+</center>
+
+<select name="cardValues" id="cardValues">
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="jack">Jack</option>
+  <option value="queen">Queen</option>
+  <option value="king">King</option>
+  <option value="ace">Ace</option>
+</select>
+
+<input type="button" onclick="findCard('ai', cardValues.value)" value="Ask for card" <br/>
+ 
+ <canvas id="myCanvas"></canvas>
+  <script src="js/scripts.js"></script> 
+<center>
+<form><input type="button" value="Play Again" onClick="window.location.reload()"></form></center>
+</body>
+</html>
+  
+ 
